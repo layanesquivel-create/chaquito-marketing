@@ -1,0 +1,26 @@
+{
+    "restaurante": "El Chaquito de Felipe",
+    "fecha_generacion": "2026-08-16 19:18",
+    "campana": "Especial Parrillero",
+    "publicaciones": [
+        {
+            "red_social": "Instagram / Facebook",
+            "tipo": "Post",
+            "copy": "🔥 ¡El auténtico sabor a la parrilla te espera en El Chaquito de Felipe! Cortes jugosos, guarniciones tradicionales y la mejor atención. 🥩✨\n\n📍 Te esperamos hoy. ¡Haz tu reserva por WhatsApp!",
+            "hashtags": [
+                "#ElChaquitoDeFelipe",
+                "#ParrillaBolivia",
+                "#CarnesLaPaz",
+                "#SaborTradicional"
+            ],
+            "asset_sugerido": "parrillada_premium.webp"
+        },
+        {
+            "red_social": "WhatsApp Business",
+            "tipo": "Estado / Mensaje Masivo",
+            "copy": "👋 ¡Hola! Hoy tenemos parrillada especial lista para servir en El Chaquito de Felipe. 🍖🔥 Consulta nuestro menú del día respondiendo a este mensaje.",
+            "hashtags": [],
+            "asset_sugerido": "menu_dia.webp"
+        }
+    ]
+}
