@@ -16,6 +16,8 @@ def main():
     ejecutar_script("optimizar_imagenes.py")
     ejecutar_script("generador_contenido.py")
     ejecutar_script("exportar_csv.py")
+    ejecutar_script("generador_prompts_ia.py")
+    ejecutar_script("generador_medios.py")
     print("\n=== PIPELINE COMPLETADO EXITOSAMENTE ===")
 
 if __name__ == "__main__":
