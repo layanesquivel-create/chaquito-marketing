@@ -1,4 +1,4 @@
-[INICIO] dom. 16/08/2026 21:01:41,97 - Ejecutando pipeline diario de marketing Chaquito 
+[INICIO] dom. 16/08/2026 21:20:29,39 - Ejecutando pipeline diario de marketing Chaquito 
 [OK] Validacion exitosa: 2 publicaciones verificadas correctamente.
 [!] No hay imagenes en D:\chaquito-marketing\assets\imagenes
 [OK] Campaña generada exitosamente en: D:\chaquito-marketing\contenido\posts\campana_activa.json
@@ -6,11 +6,11 @@
 [+] Leyendo campaña activa...
 [+] Restaurante: El Chaquito de Felipe
 [+] Campaña: Especial Parrillero
-[OK] Prompts de imagen: D:\chaquito-marketing\assets\prompts\prompts_imagenes_20260816_210142.json
-[OK] Prompts de video: D:\chaquito-marketing\assets\prompts\prompts_videos_20260816_210142.json
-[OK] Prompts combinados: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_210142.json
+[OK] Prompts de imagen: D:\chaquito-marketing\assets\prompts\prompts_imagenes_20260816_212030.json
+[OK] Prompts de video: D:\chaquito-marketing\assets\prompts\prompts_videos_20260816_212030.json
+[OK] Prompts combinados: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_212030.json
 
-[OK] Lote base generado en: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_210142.json
+[OK] Lote base generado en: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_212030.json
 === GENERACIÓN DE PROMPTS COMPLETADA ===
 === EXPORTAR PROMPTS A LOTE DE PRODUCCIÓN ===
 [OK] Lote compilado: D:\chaquito-marketing\assets\prompts\lote_produccion.json
@@ -24,18 +24,18 @@
 === RESUMEN FINAL ===
 
 Pilar: Comercial
-Copy: 🔥 Hoy en El Chaquito de Felipe te recomendamos Huari Miel. A solo 20 Bs.. Pedí ahora por WhatsApp y reservá tu mesa.
+Copy: 🔥 Hoy en El Chaquito de Felipe te recomendamos Selección de Vinos del Sur. A solo 55 Bs.. Pedí ahora por WhatsApp y reservá tu mesa.
 Hashtags: #Parrilla, #Pedidos, #ElChaquitodeFelipe
 CTA: Pedí por WhatsApp
-Plato: Huari Miel | Precio: 20 Bs.
-Imagen 1x1: Foto cuadrada 1:1 gastronómica profesional de Huari Miel en El Chaquito de Felipe. Primer plano sobre tabla de madera rústica, jugosidad visible, humo leve, luz cálida lateral, f/2.8, 8K.
-Video 9:16: Video vertical 9:16 de Huari Miel en El Chaquito de Felipe. Corte lento de la carne con cuchillo, jugo escurriendo, brasas al fondo, focus pull suave, 4K vertical, color grading cálido.
+Plato: Selección de Vinos del Sur | Precio: 55 Bs.
+Imagen 1x1: Foto cuadrada 1:1 gastronómica profesional de Selección de Vinos del Sur en El Chaquito de Felipe. Primer plano sobre tabla de madera rústica, jugosidad visible, humo leve, luz cálida lateral, f/2.8, 8K.
+Video 9:16: Video vertical 9:16 de Selección de Vinos del Sur en El Chaquito de Felipe. Corte lento de la carne con cuchillo, jugo escurriendo, brasas al fondo, focus pull suave, 4K vertical, color grading cálido.
 --------------------------------------------------------------------------------
 Pilar: Curiosidades de la Parrilla
 Copy: ¿Sabías por qué la carne en la parrilla desarrolla ese sabor único? En El Chaquito de Felipe usamos carbón seleccionado y técnica artesanal para potenciar la reacción de Maillard sin quemar la fibra.
 Hashtags: #CienciaAsado, #Parrilla, #ElChaquitodeFelipe
 CTA: Reservá y probalo
-Plato: Corte Chaquito Cerdo | Precio: 60 Bs.
+Plato: Parrilla Bi Personal | Precio: 190 Bs.
 Imagen 1x1: Macro cuadrada 1:1 del carbón encendido con brasas incandescentes y partículas de humo en suspensión. Textura íntima de la parrilla, contraluz suave, fondo oscuro madera carbonizada, 8K.
 Video 9:16: Video vertical 9:16 cinematic: acercamiento extremo a brasas encendidas, humo volumétrico ascendiendo en hilos translúcidos, chispas leves, profundidad reducida, 4K vertical.
 --------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ Pilar: Tips Parrilleros
 Copy: Tip parrillero: sellá la carne a fuego alto sin moverla los primeros 90 segundos. Así conservás los jugos y obtenés esa crosta dorada perfecta. En El Chaquito de Felipe lo hacemos así en cada corte.
 Hashtags: #TipsParrilla, #Asado, #ElChaquitodeFelipe
 CTA: Consultá nuestro menú
-Plato: Huari Miel | Precio: 20 Bs.
+Plato: Paceña | Precio: 24 Bs.
 Imagen 1x1: Foto cuadrada 1:1 close-up del corte transversal de la carne mostrando cocción interna jugosa. Superficie dorada, fibras visibles, jugo cristalino sobre tabla rústica, estilo didáctico premium.
 Video 9:16: Video vertical 9:16 tutorial rápido: cuchillo cortando carne lentamente, close-up del interior jugoso, brasas desenfocadas al fondo, transición humo a plato servido.
 --------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Pilar: Tradición Criolla
 Copy: 20 años de tradición chapaca en cada mesa. En El Chaquito de Felipe el asado no es solo comida, es el encuentro de la familia y la parrilla con alma paceña.
 Hashtags: #Tradicion, #CocinaBoliviana, #ElChaquitodeFelipe
 CTA: Escribinos por WhatsApp
-Plato: Huari Miel | Precio: 20 Bs.
+Plato: Parrilla Bi Personal | Precio: 190 Bs.
 Imagen 1x1: Foto cuadrada 1:1 con ambiente familiar parrilla: mesa rústica con plato principal, copa de vino, pan casero, decoración con carbón y leña, luz cálida acogedora, 8K.
 Video 9:16: Video vertical 9:16 narrativo: primeros planos de manos sirviendo parrilla, risas de fondo, humo suave, movimiento natural de la cámara, estética documental gastronómica.
 --------------------------------------------------------------------------------
@@ -81,5 +81,90 @@ Video 9:16: Video vertical 9:16 narrativo: primeros planos de manos sirviendo pa
 [OK] agencia_autonoma.py finalizado con exito.
 
 === PIPELINE COMPLETADO EXITOSAMENTE ===
-[OK] dom. 16/08/2026 21:01:43,06 - Pipeline completado exitosamente 
+[OK] dom. 16/08/2026 21:20:30,41 - Pipeline completado exitosamente 
+---------------------------------------- 
+[INICIO] dom. 16/08/2026 21:21:08,86 - Ejecutando pipeline diario de marketing Chaquito 
+[OK] Validacion exitosa: 2 publicaciones verificadas correctamente.
+[!] No hay imagenes en D:\chaquito-marketing\assets\imagenes
+[OK] Campaña generada exitosamente en: D:\chaquito-marketing\contenido\posts\campana_activa.json
+[OK] Exportacion exitosa a CSV: D:\chaquito-marketing\contenido\posts\programacion_meta.csv
+[+] Leyendo campaña activa...
+[+] Restaurante: El Chaquito de Felipe
+[+] Campaña: Especial Parrillero
+[OK] Prompts de imagen: D:\chaquito-marketing\assets\prompts\prompts_imagenes_20260816_212109.json
+[OK] Prompts de video: D:\chaquito-marketing\assets\prompts\prompts_videos_20260816_212109.json
+[OK] Prompts combinados: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_212109.json
+
+[OK] Lote base generado en: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_212109.json
+=== GENERACIÓN DE PROMPTS COMPLETADA ===
+=== EXPORTAR PROMPTS A LOTE DE PRODUCCIÓN ===
+[OK] Lote compilado: D:\chaquito-marketing\assets\prompts\lote_produccion.json
+[+] Listo para generación por lotes: D:\chaquito-marketing\assets\prompts\lote_produccion.json
+=== EXPORTACIÓN COMPLETADA ===
+[+] Cargando perfil del restaurante...
+[+] Generando lote completo del día...
+
+[OK] Lote guardado en: D:\chaquito-marketing\assets\prompts\pilares_creativos.json
+
+=== RESUMEN FINAL ===
+
+Pilar: Comercial
+Copy: 🔥 Hoy en El Chaquito de Felipe te recomendamos Choripán. A solo 15 Bs.. Pedí ahora por WhatsApp y reservá tu mesa.
+Hashtags: #Parrilla, #Pedidos, #ElChaquitodeFelipe
+CTA: Pedí por WhatsApp
+Plato: Choripán | Precio: 15 Bs.
+Imagen 1x1: Foto cuadrada 1:1 gastronómica profesional de Choripán en El Chaquito de Felipe. Primer plano sobre tabla de madera rústica, jugosidad visible, humo leve, luz cálida lateral, f/2.8, 8K.
+Video 9:16: Video vertical 9:16 de Choripán en El Chaquito de Felipe. Corte lento de la carne con cuchillo, jugo escurriendo, brasas al fondo, focus pull suave, 4K vertical, color grading cálido.
+--------------------------------------------------------------------------------
+Pilar: Curiosidades de la Parrilla
+Copy: ¿Sabías por qué la carne en la parrilla desarrolla ese sabor único? En El Chaquito de Felipe usamos carbón seleccionado y técnica artesanal para potenciar la reacción de Maillard sin quemar la fibra.
+Hashtags: #CienciaAsado, #Parrilla, #ElChaquitodeFelipe
+CTA: Reservá y probalo
+Plato: Parrilla Bi Personal | Precio: 190 Bs.
+Imagen 1x1: Macro cuadrada 1:1 del carbón encendido con brasas incandescentes y partículas de humo en suspensión. Textura íntima de la parrilla, contraluz suave, fondo oscuro madera carbonizada, 8K.
+Video 9:16: Video vertical 9:16 cinematic: acercamiento extremo a brasas encendidas, humo volumétrico ascendiendo en hilos translúcidos, chispas leves, profundidad reducida, 4K vertical.
+--------------------------------------------------------------------------------
+Pilar: Tips Parrilleros
+Copy: Tip parrillero: sellá la carne a fuego alto sin moverla los primeros 90 segundos. Así conservás los jugos y obtenés esa crosta dorada perfecta. En El Chaquito de Felipe lo hacemos así en cada corte.
+Hashtags: #TipsParrilla, #Asado, #ElChaquitodeFelipe
+CTA: Consultá nuestro menú
+Plato: Capricho | Precio: 60 Bs.
+Imagen 1x1: Foto cuadrada 1:1 close-up del corte transversal de la carne mostrando cocción interna jugosa. Superficie dorada, fibras visibles, jugo cristalino sobre tabla rústica, estilo didáctico premium.
+Video 9:16: Video vertical 9:16 tutorial rápido: cuchillo cortando carne lentamente, close-up del interior jugoso, brasas desenfocadas al fondo, transición humo a plato servido.
+--------------------------------------------------------------------------------
+Pilar: Tradición Criolla
+Copy: 20 años de tradición chapaca en cada mesa. En El Chaquito de Felipe el asado no es solo comida, es el encuentro de la familia y la parrilla con alma paceña.
+Hashtags: #Tradicion, #CocinaBoliviana, #ElChaquitodeFelipe
+CTA: Escribinos por WhatsApp
+Plato: Medio Churrasco | Precio: 50 Bs.
+Imagen 1x1: Foto cuadrada 1:1 con ambiente familiar parrilla: mesa rústica con plato principal, copa de vino, pan casero, decoración con carbón y leña, luz cálida acogedora, 8K.
+Video 9:16: Video vertical 9:16 narrativo: primeros planos de manos sirviendo parrilla, risas de fondo, humo suave, movimiento natural de la cámara, estética documental gastronómica.
+--------------------------------------------------------------------------------
+
+=== ENTREGA COMPLETA ===
+=== INICIANDO PIPELINE DE MARKETING CHAQUITO ===
+
+[+] Ejecutando validar_menu.py...
+[OK] validar_menu.py finalizado con exito.
+
+[+] Ejecutando optimizar_imagenes.py...
+[OK] optimizar_imagenes.py finalizado con exito.
+
+[+] Ejecutando generador_contenido.py...
+[OK] generador_contenido.py finalizado con exito.
+
+[+] Ejecutando exportar_csv.py...
+[OK] exportar_csv.py finalizado con exito.
+
+[+] Ejecutando generador_prompts_ia.py...
+[OK] generador_prompts_ia.py finalizado con exito.
+
+[+] Ejecutando exportar_prompts.py...
+[OK] exportar_prompts.py finalizado con exito.
+
+[+] Ejecutando agencia_autonoma.py...
+[OK] agencia_autonoma.py finalizado con exito.
+
+=== PIPELINE COMPLETADO EXITOSAMENTE ===
+[OK] dom. 16/08/2026 21:21:09,89 - Pipeline completado exitosamente 
 ---------------------------------------- 

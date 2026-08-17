@@ -1,8 +1,10 @@
 import subprocess
 import sys
 
-sys.stdout.reconfigure(encoding="utf-8")
-sys.stderr.reconfigure(encoding="utf-8")
+if sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if sys.stderr.encoding.lower() not in ("utf-8", "utf8"):
+    sys.stderr.reconfigure(encoding="utf-8")
 
 def ejecutar_script(nombre):
     print(f"\n[+] Ejecutando {nombre}...")
