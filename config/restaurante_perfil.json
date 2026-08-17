@@ -2,16 +2,169 @@
   "nombre": "El Chaquito de Felipe",
   "tipo": "Restaurante de parrillas y comida criolla tradicional",
   "ubicacion": "La Paz, Bolivia",
+  "descripcion": "20 Años Encendiendo la Pasión por el Asado. Desde hace dos décadas, El Chaquito de Felipe nació en La Paz con una promesa clara: traer la auténtica hospitalidad y la calidez de la tradición chapaca a la mesa de los paceños. Lo que comenzó como un sueño familiar alrededor de las brasas se ha convertido en un punto de encuentro icónico en Miraflores.",
   "menu_principal": [
-    "Parrillada completa",
-    "Bife de chorizo",
-    "Tira de asado",
-    "Costillas a la brasa",
-    "Chuletas de cerdo",
-    "Guarniciones criollas (arroz con queso, yuca frita, papas, ensaladas)"
+    {
+      "categoria": "Parrillas y Asados",
+      "items": [
+        {
+          "nombre": "Parrilla Personal",
+          "descripcion": "Chorizo, 150g Vacío, 100g Chuleta Cerdo, 50g Asado Tira, 50g Filete Pollo, Ubre y Tripas + Acompañamientos",
+          "precio": "150 Bs."
+        },
+        {
+          "nombre": "Parrilla Bi Personal",
+          "descripcion": "2 Chorizos, 300g Vacío, 150g Chuleta Cerdo, 100g Asado Tira, 100g Filete Pollo, Ubre y Tripas + Acompañamientos",
+          "precio": "190 Bs."
+        },
+        {
+          "nombre": "Parrilla Tri Personal",
+          "descripcion": "3 Chorizos, 500g Vacío, 300g Chuleta Cerdo, 200g Asado Tira, 200g Filete Pollo, Ubre y Tripas + Acompañamientos",
+          "precio": "230 Bs."
+        }
+      ]
+    },
+    {
+      "categoria": "Cortes y Especialidades",
+      "items": [
+        {
+          "nombre": "Bife Chorizo de Autor",
+          "descripcion": "150g Bife Chorizo con cobertura de grasa caramelizada + Arroz (con queso o graneado), papas fritas y ensalada",
+          "precio": "90 Bs.",
+          "etiqueta": "Especialidad"
+        },
+        {
+          "nombre": "Brocheta Chaquito",
+          "descripcion": "80g Churrasco, tripitas, ubre, filete de pollo, cebolla y morrón + acompañamientos",
+          "precio": "90 Bs."
+        },
+        {
+          "nombre": "Filete de Res",
+          "descripcion": "150g de Filete + acompañamientos",
+          "precio": "100 Bs."
+        },
+        {
+          "nombre": "Corte Chaquito Vacío",
+          "descripcion": "230g Vacío + acompañamientos",
+          "precio": "60 Bs."
+        },
+        {
+          "nombre": "Corte Chaquito Pollo",
+          "descripcion": "200g Filete de pollo + acompañamientos",
+          "precio": "60 Bs."
+        },
+        {
+          "nombre": "Corte Chaquito Cerdo",
+          "descripcion": "200g Chuleta de cerdo + acompañamientos",
+          "precio": "60 Bs."
+        },
+        {
+          "nombre": "Medio Churrasco",
+          "descripcion": "110g Churrasco + acompañamientos",
+          "precio": "50 Bs.",
+          "etiqueta": "Ejecutivo"
+        }
+      ]
+    },
+    {
+      "categoria": "Express y Piqueos",
+      "items": [
+        {
+          "nombre": "Chorizo al Plato",
+          "descripcion": "3 Chorizos criollos + acompañamientos",
+          "precio": "60 Bs."
+        },
+        {
+          "nombre": "Pacumuto Entero",
+          "descripcion": "100g Churrasco, chorizo, tripitas, ubre + acompañamientos",
+          "precio": "60 Bs."
+        },
+        {
+          "nombre": "Asado de Tira",
+          "descripcion": "200g Tira delgada + acompañamientos",
+          "precio": "60 Bs."
+        },
+        {
+          "nombre": "Antojito",
+          "descripcion": "1 Chorizo picado + 1 vacío picado + pan a la parrilla + chimichurri",
+          "precio": "40 Bs."
+        },
+        {
+          "nombre": "Capricho",
+          "descripcion": "1.5 Chorizos, 2 vacíos, 1 pollo picado + papas + pan + chimichurri",
+          "precio": "60 Bs."
+        },
+        {
+          "nombre": "Al Límite",
+          "descripcion": "2 Chorizos, 3 vacíos, 2 pollos picados + papas + pan + chimichurri",
+          "precio": "80 Bs."
+        },
+        {
+          "nombre": "Choripán",
+          "descripcion": "Chorizo criollo, lechuga, tomate, papas fritas y chimichurri",
+          "precio": "15 Bs."
+        }
+      ]
+    },
+    {
+      "categoria": "Bebidas y Vinos",
+      "items": [
+        {
+          "nombre": "Jugos Naturales / Frutales",
+          "descripcion": "Vaso desde 5 Bs. / Jarra Grande o Botella 1L desde 20 Bs.",
+          "precio": "5 Bs."
+        },
+        {
+          "nombre": "Gaseosas",
+          "descripcion": "330ml desde 3 Bs. / 2 Litros desde 20 Bs.",
+          "precio": "3 Bs."
+        },
+        {
+          "nombre": "Paceña",
+          "descripcion": "Cerveza Paceña",
+          "precio": "24 Bs."
+        },
+        {
+          "nombre": "Huari",
+          "descripcion": "Cerveza Huari",
+          "precio": "25 Bs."
+        },
+        {
+          "nombre": "Huari Miel",
+          "descripcion": "Cerveza Huari Miel",
+          "precio": "20 Bs."
+        },
+        {
+          "nombre": "Selección de Vinos del Sur",
+          "descripcion": "Kohlberg Clásico, Campos de Solana, Stirpe — 55 Bs. / Tannat — 130 Bs.",
+          "precio": "55 Bs."
+        }
+      ]
+    }
   ],
   "tono_comunicacion": "Cercano, familiar, apetitoso, tradicional y festivo",
   "llamado_a_la_accion": "Pedidos a domicilio y reservas por WhatsApp",
-  "web_oficial": "",
+  "web_oficial": "https://chaquitodefelipe1.netlify.app/",
+  "contacto": {
+    "telefono": "+591 68133991",
+    "email": "info@elchaquitodefelipe.com",
+    "whatsapp": "https://wa.me/59168133991?text=¡Hola!%20Quisiera%20realizar%20un%20pedido%20o%20reservación%20en%20El%20Chaquito%20de%20Felipe",
+    "direccion": "Calle Panamá, casi esquina Plaza Uyuni (Miraflores / Centro), La Paz, Bolivia",
+    "horario_atencion": "Lunes a Sábado, 12:00 PM - 22:00 PM"
+  },
+  "redes_sociales": [
+    {
+      "nombre": "Facebook",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "nombre": "Instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "nombre": "TikTok",
+      "url": "https://www.tiktok.com/@chaquitodefelipe"
+    }
+  ],
   "estilo_visual": "Fotografia gastronomica macro, humo de brasas, cortes jugosos, iluminacion calida, tablas de madera rustica, videos verticales 9:16 en camara lenta"
 }
