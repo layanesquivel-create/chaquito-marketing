@@ -1,0 +1,46 @@
+[OK] Validacion exitosa: 2 publicaciones verificadas correctamente.
+[!] No hay imagenes en D:\chaquito-marketing\assets\imagenes
+[OK] Campaña generada exitosamente en: D:\chaquito-marketing\contenido\posts\campana_activa.json
+[OK] Exportacion exitosa a CSV: D:\chaquito-marketing\contenido\posts\programacion_meta.csv
+[+] Leyendo campaña activa...
+[+] Restaurante: El Chaquito de Felipe
+[+] Campaña: Especial Parrillero
+[OK] Prompts de imagen: D:\chaquito-marketing\assets\prompts\prompts_imagenes_20260816_202345.json
+[OK] Prompts de video: D:\chaquito-marketing\assets\prompts\prompts_videos_20260816_202345.json
+[OK] Prompts combinados: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_202345.json
+
+[OK] Lote base generado en: D:\chaquito-marketing\assets\prompts\prompts_ia_20260816_202345.json
+=== GENERACIÓN DE PROMPTS COMPLETADA ===
+=== EXPORTAR PROMPTS A LOTE DE PRODUCCIÓN ===
+[OK] Lote compilado: D:\chaquito-marketing\assets\prompts\lote_produccion.json
+[+] Listo para generación por lotes: D:\chaquito-marketing\assets\prompts\lote_produccion.json
+=== EXPORTACIÓN COMPLETADA ===
+=== GENERADOR DE MEDIOS CHAQUITO ===
+Traceback (most recent call last):
+  File "D:\chaquito-marketing\scripts\generador_medios.py", line 157, in <module>
+    main()
+  File "D:\chaquito-marketing\scripts\generador_medios.py", line 128, in main
+    raise EnvironmentError("Falta OPENAI_API_KEY / STABILITY_API_KEY / PIKA_API_KEY en .env")
+OSError: Falta OPENAI_API_KEY / STABILITY_API_KEY / PIKA_API_KEY en .env
+=== INICIANDO PIPELINE DE MARKETING CHAQUITO ===
+
+[+] Ejecutando validar_menu.py...
+[OK] validar_menu.py finalizado con exito.
+
+[+] Ejecutando optimizar_imagenes.py...
+[OK] optimizar_imagenes.py finalizado con exito.
+
+[+] Ejecutando generador_contenido.py...
+[OK] generador_contenido.py finalizado con exito.
+
+[+] Ejecutando exportar_csv.py...
+[OK] exportar_csv.py finalizado con exito.
+
+[+] Ejecutando generador_prompts_ia.py...
+[OK] generador_prompts_ia.py finalizado con exito.
+
+[+] Ejecutando exportar_prompts.py...
+[OK] exportar_prompts.py finalizado con exito.
+
+[+] Ejecutando generador_medios.py...
+[!] Error al ejecutar generador_medios.py

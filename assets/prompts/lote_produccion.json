@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "compilado_en": "2026-08-16T20:23:45.515894",
+    "imagenes_archivo": "prompts_imagenes_20260816_202345.json",
+    "videos_archivo": "prompts_videos_20260816_202345.json"
+  },
+  "imagenes": [
+    {
+      "platillo": "menu_dia",
+      "prompt": "Fotografía macro gastronómica profesional de menu_dia en El Chaquito de Felipe. Iluminación cálida de brasas de carbón, contraluz suave, texturas detalladas: grasa fundida, jugos cristalinos, crosta dorada, humo ligero en suspensión. Estilo realista, 8K, f/2.8, lente 100mm macro, fondo oscuro madera rústica, partículas de sal y pimienta, gotas de jugo congeladas en slow motion virtual, sin personas, solo comida y parrilla. Brasas encendidas en primer plano, partículas incandescentes ascendiendo. Corte transversal delgado en primer plano mostrando cocción interna jugosa. Humo volumétrico denso, contrapesado por luz cálida lateral.",
+      "hash": "e5eca23a"
+    },
+    {
+      "platillo": "parrillada_premium",
+      "prompt": "Fotografía macro gastronómica profesional de parrillada_premium en El Chaquito de Felipe. Iluminación cálida de brasas de carbón, contraluz suave, texturas detalladas: grasa fundida, jugos cristalinos, crosta dorada, humo ligero en suspensión. Estilo realista, 8K, f/2.8, lente 100mm macro, fondo oscuro madera rústica, partículas de sal y pimienta, gotas de jugo congeladas en slow motion virtual, sin personas, solo comida y parrilla. Brasas encendidas en primer plano, partículas incandescentes ascendiendo. Corte transversal delgado en primer plano mostrando cocción interna jugosa. Humo volumétrico denso, contrapesado por luz cálida lateral.",
+      "hash": "dc18c4c3"
+    }
+  ],
+  "videos": [
+    {
+      "platillo": "menu_dia",
+      "prompt": "Video vertical 9:16 cinemático de menu_dia en El Chaquito de Felipe. Cámara lenta 120fps: corte de carne con cuchillo, jugosidad extrema saliendo, humo ascendiendo en hilos translúcidos, brasas iluminando bordes, texturas close-up, música ambiente parrilla leve, transición humo a plato servido, 4K vertical, color grading cálido, focus pulling suave. Brasas encendidas en primer plano, partículas incandescentes ascendiendo. Corte transversal delgado en primer plano mostrando cocción interna jugosa. Humo volumétrico denso, contrapesado por luz cálida lateral.",
+      "hash": "4dc9d077"
+    },
+    {
+      "platillo": "parrillada_premium",
+      "prompt": "Video vertical 9:16 cinemático de parrillada_premium en El Chaquito de Felipe. Cámara lenta 120fps: corte de carne con cuchillo, jugosidad extrema saliendo, humo ascendiendo en hilos translúcidos, brasas iluminando bordes, texturas close-up, música ambiente parrilla leve, transición humo a plato servido, 4K vertical, color grading cálido, focus pulling suave. Brasas encendidas en primer plano, partículas incandescentes ascendiendo. Corte transversal delgado en primer plano mostrando cocción interna jugosa. Humo volumétrico denso, contrapesado por luz cálida lateral.",
+      "hash": "997fe6f1"
+    }
+  ]
+}

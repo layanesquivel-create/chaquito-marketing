@@ -1,5 +1,5 @@
 import json
-import os
+import hashlib
 from datetime import datetime
 from pathlib import Path
 
@@ -8,6 +8,7 @@ RUTA_CAMPAÑA = BASE_DIR / "contenido" / "posts" / "campana_activa.json"
 RUTA_PROMPTS = BASE_DIR / "assets" / "prompts"
 
 RUTA_PROMPTS.mkdir(parents=True, exist_ok=True)
+
 
 IMAGEN_BASE = """Fotografía macro gastronómica profesional de {plato} en {restaurante}. \
 Iluminación cálida de brasas de carbón, contraluz suave, texturas detalladas: \
@@ -22,10 +23,20 @@ humo ascendiendo en hilos translúcidos, brasas iluminando bordes, texturas clos
 música ambiente parrilla leve, transición humo a plato servido, \
 4K vertical, color grading cálido, focus pulling suave."""
 
+TEMPLATES_EXTRA = {
+    "brasas": "Brasas encendidas en primer plano, partículas incandescentes ascendiendo.",
+    "corte": "Corte transversal delgado en primer plano mostrando cocción interna jugosa.",
+    "humo": "Humo volumétrico denso, contrapesado por luz cálida lateral.",
+}
+
 
 def cargar_campaña():
     with open(RUTA_CAMPAÑA, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def hash_prompt(texto: str) -> str:
+    return hashlib.sha1(texto.encode("utf-8")).hexdigest()[:8]
 
 
 def extraer_platillos(datos):
@@ -33,8 +44,7 @@ def extraer_platillos(datos):
     for pub in datos.get("publicaciones", []):
         asset = pub.get("asset_sugerido", "")
         if asset:
-            nombre = Path(asset).stem
-            platillos.add(nombre)
+            platillos.add(Path(asset).stem)
     return sorted(platillos)
 
 
@@ -43,17 +53,16 @@ def generar_prompts(datos):
     platillos = extraer_platillos(datos)
     marca_tiempo = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    prompts = {"imagenes": [], "videos": []}
+    prompts = {"imagenes": [], "videos": [], "metadata": {"restaurante": nombre_rest, "campaña": datos.get("campana"), "marca_tiempo": marca_tiempo, "total": len(platillos)}}
 
     for platillo in platillos:
-        prompts["imagenes"].append({
-            "platillo": platillo,
-            "prompt": IMAGEN_BASE.format(plato=platillo, restaurante=nombre_rest),
-        })
-        prompts["videos"].append({
-            "platillo": platillo,
-            "prompt": VIDEO_BASE.format(plato=platillo, restaurante=nombre_rest),
-        })
+        imagen = IMAGEN_BASE.format(plato=platillo, restaurante=nombre_rest)
+        imagen += " " + TEMPLATES_EXTRA["brasas"] + " " + TEMPLATES_EXTRA["corte"] + " " + TEMPLATES_EXTRA["humo"]
+        prompts["imagenes"].append({"platillo": platillo, "prompt": imagen, "hash": hash_prompt(imagen)})
+
+        video = VIDEO_BASE.format(plato=platillo, restaurante=nombre_rest)
+        video += " " + TEMPLATES_EXTRA["brasas"] + " " + TEMPLATES_EXTRA["corte"] + " " + TEMPLATES_EXTRA["humo"]
+        prompts["videos"].append({"platillo": platillo, "prompt": video, "hash": hash_prompt(video)})
 
     ruta_img = RUTA_PROMPTS / f"prompts_imagenes_{marca_tiempo}.json"
     ruta_vid = RUTA_PROMPTS / f"prompts_videos_{marca_tiempo}.json"
@@ -71,7 +80,7 @@ def generar_prompts(datos):
     print(f"[OK] Prompts de imagen: {ruta_img}")
     print(f"[OK] Prompts de video: {ruta_vid}")
     print(f"[OK] Prompts combinados: {ruta_all}")
-    return prompts
+    return prompts, ruta_all
 
 
 def main():
@@ -79,8 +88,9 @@ def main():
     datos = cargar_campaña()
     print(f"[+] Restaurante: {datos.get('restaurante')}")
     print(f"[+] Campaña: {datos.get('campana')}")
-    generar_prompts(datos)
-    print("\n=== GENERACIÓN DE PROMPTS COMPLETADA ===")
+    _, ruta = generar_prompts(datos)
+    print(f"\n[OK] Lote base generado en: {ruta}")
+    print("=== GENERACIÓN DE PROMPTS COMPLETADA ===")
 
 
 if __name__ == "__main__":
