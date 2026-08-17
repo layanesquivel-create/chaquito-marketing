@@ -1,0 +1,17 @@
+{
+  "nombre": "El Chaquito de Felipe",
+  "tipo": "Restaurante de parrillas y comida criolla tradicional",
+  "ubicacion": "La Paz, Bolivia",
+  "menu_principal": [
+    "Parrillada completa",
+    "Bife de chorizo",
+    "Tira de asado",
+    "Costillas a la brasa",
+    "Chuletas de cerdo",
+    "Guarniciones criollas (arroz con queso, yuca frita, papas, ensaladas)"
+  ],
+  "tono_comunicacion": "Cercano, familiar, apetitoso, tradicional y festivo",
+  "llamado_a_la_accion": "Pedidos a domicilio y reservas por WhatsApp",
+  "web_oficial": "",
+  "estilo_visual": "Fotografia gastronomica macro, humo de brasas, cortes jugosos, iluminacion calida, tablas de madera rustica, videos verticales 9:16 en camara lenta"
+}
