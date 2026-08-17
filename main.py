@@ -18,7 +18,7 @@ def main():
     ejecutar_script("exportar_csv.py")
     ejecutar_script("generador_prompts_ia.py")
     ejecutar_script("exportar_prompts.py")
-    ejecutar_script("generador_medios.py")
+    ejecutar_script("agencia_autonoma.py")
     print("\n=== PIPELINE COMPLETADO EXITOSAMENTE ===")
 
 if __name__ == "__main__":

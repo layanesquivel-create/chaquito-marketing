@@ -34,7 +34,7 @@ class EstrategaCreativo:
         },
         "Tradición Criolla": {
             "copy": "20 años de tradición chapaca en cada mesa. En {restaurante} el asado no es solo comida, es el encuentro de la familia y la parrilla con alma paceña.",
-            "hashtags": ["#Tradicion{id}", "#CocinaBoliviana{id}", "#{restaurante_slug}"],
+            "hashtags": ["#Tradicion", "#CocinaBoliviana", "#{restaurante_slug}"],
             "cta": "Escribinos por WhatsApp",
         },
     }
@@ -62,7 +62,7 @@ class EstrategaCreativo:
             precio=precio,
             restaurante_slug=self.restaurante_slug,
         )
-        hashtags = [h.format(id="s", restaurante_slug=self.restaurante_slug) for h in plantilla["hashtags"]]
+        hashtags = [h.format(restaurante_slug=self.restaurante_slug) for h in plantilla["hashtags"]]
         return {
             "pilar": pilar,
             "copy": copy,
@@ -101,6 +101,16 @@ class DirectorArte:
         return {"pilar": pilar, "imagen_1x1": imagen, "video_9x16": video}
 
 
+def generar_lote(perfil: dict, estratega: EstrategaCreativo, director: DirectorArte) -> dict:
+    pilares_objetivo = ["Comercial", "Curiosidades de la Parrilla", "Tips Parrilleros", "Tradición Criolla"]
+    lote = {"metadata": {"restaurante": perfil.get("nombre"), "generado_en": datetime.now().isoformat(), "total": len(pilares_objetivo)}, "posts": []}
+    for pilar in pilares_objetivo:
+        post = estratega.generar_post(pilar)
+        prompts = director.generar_prompts(pilar, post.get("plato_recomendado", "nuestro menú"))
+        lote["posts"].append({"post": post, "prompts_visuales": prompts})
+    return lote
+
+
 def main():
     print("[+] Cargando perfil del restaurante...")
     perfil = json.loads(RUTA_PERFIL.read_text(encoding="utf-8"))
@@ -108,24 +118,27 @@ def main():
     estratega = EstrategaCreativo(perfil)
     director = DirectorArte()
 
-    pilar = random.choice(estratega.PILARES)
-    print(f"[+] Pilar seleccionado: {pilar}")
-
-    post = estratega.generar_post(pilar)
-    prompts = director.generar_prompts(pilar, post.get("plato_recomendado", "nuestro menú"))
-
-    resultado = {
-        "post": post,
-        "prompts_visuales": prompts,
-    }
+    print("[+] Generando lote completo del día...")
+    lote = generar_lote(perfil, estratega, director)
 
     RUTA_SALIDA.parent.mkdir(parents=True, exist_ok=True)
     with open(RUTA_SALIDA, "w", encoding="utf-8") as f:
-        json.dump(resultado, f, ensure_ascii=False, indent=2)
+        json.dump(lote, f, ensure_ascii=False, indent=2)
 
-    print("\n=== RESULTADO ===\n")
-    print(json.dumps(resultado, ensure_ascii=False, indent=2))
-    print(f"\n[OK] Resultado guardado en: {RUTA_SALIDA}")
+    print(f"\n[OK] Lote guardado en: {RUTA_SALIDA}")
+    print("\n=== RESUMEN FINAL ===\n")
+    for entrada in lote["posts"]:
+        post = entrada["post"]
+        prompts = entrada["prompts_visuales"]
+        print(f"Pilar: {post['pilar']}")
+        print(f"Copy: {post['copy']}")
+        print(f"Hashtags: {', '.join(post['hashtags'])}")
+        print(f"CTA: {post['cta']}")
+        print(f"Plato: {post['plato_recomendado']} | Precio: {post['precio']}")
+        print(f"Imagen 1x1: {prompts['imagen_1x1']}")
+        print(f"Video 9:16: {prompts['video_9x16']}")
+        print("-" * 80)
+    print("\n=== ENTREGA COMPLETA ===")
 
 
 if __name__ == "__main__":
