@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "restaurante": "El Chaquito de Felipe",
+    "generado_en": "2026-08-16T20:58:47.815087",
+    "total": 4
+  },
+  "posts": [
+    {
+      "post": {
+        "pilar": "Comercial",
+        "copy": "🔥 Hoy en El Chaquito de Felipe te recomendamos Parrilla Tri Personal. A solo 230 Bs.. Pedí ahora por WhatsApp y reservá tu mesa.",
+        "hashtags": [
+          "#Parrilla",
+          "#Pedidos",
+          "#ElChaquitodeFelipe"
+        ],
+        "cta": "Pedí por WhatsApp",
+        "plato_recomendado": "Parrilla Tri Personal",
+        "precio": "230 Bs.",
+        "generado_en": "2026-08-16T20:58:47.815087"
+      },
+      "prompts_visuales": {
+        "pilar": "Comercial",
+        "imagen_1x1": "Foto cuadrada 1:1 gastronómica profesional de Parrilla Tri Personal en El Chaquito de Felipe. Primer plano sobre tabla de madera rústica, jugosidad visible, humo leve, luz cálida lateral, f/2.8, 8K.",
+        "video_9x16": "Video vertical 9:16 de Parrilla Tri Personal en El Chaquito de Felipe. Corte lento de la carne con cuchillo, jugo escurriendo, brasas al fondo, focus pull suave, 4K vertical, color grading cálido."
+      }
+    },
+    {
+      "post": {
+        "pilar": "Curiosidades de la Parrilla",
+        "copy": "¿Sabías por qué la carne en la parrilla desarrolla ese sabor único? En El Chaquito de Felipe usamos carbón seleccionado y técnica artesanal para potenciar la reacción de Maillard sin quemar la fibra.",
+        "hashtags": [
+          "#CienciaAsado",
+          "#Parrilla",
+          "#ElChaquitodeFelipe"
+        ],
+        "cta": "Reservá y probalo",
+        "plato_recomendado": "Parrilla Tri Personal",
+        "precio": "230 Bs.",
+        "generado_en": "2026-08-16T20:58:47.815087"
+      },
+      "prompts_visuales": {
+        "pilar": "Curiosidades de la Parrilla",
+        "imagen_1x1": "Macro cuadrada 1:1 del carbón encendido con brasas incandescentes y partículas de humo en suspensión. Textura íntima de la parrilla, contraluz suave, fondo oscuro madera carbonizada, 8K.",
+        "video_9x16": "Video vertical 9:16 cinematic: acercamiento extremo a brasas encendidas, humo volumétrico ascendiendo en hilos translúcidos, chispas leves, profundidad reducida, 4K vertical."
+      }
+    },
+    {
+      "post": {
+        "pilar": "Tips Parrilleros",
+        "copy": "Tip parrillero: sellá la carne a fuego alto sin moverla los primeros 90 segundos. Así conservás los jugos y obtenés esa crosta dorada perfecta. En El Chaquito de Felipe lo hacemos así en cada corte.",
+        "hashtags": [
+          "#TipsParrilla",
+          "#Asado",
+          "#ElChaquitodeFelipe"
+        ],
+        "cta": "Consultá nuestro menú",
+        "plato_recomendado": "Corte Chaquito Cerdo",
+        "precio": "60 Bs.",
+        "generado_en": "2026-08-16T20:58:47.815087"
+      },
+      "prompts_visuales": {
+        "pilar": "Tips Parrilleros",
+        "imagen_1x1": "Foto cuadrada 1:1 close-up del corte transversal de la carne mostrando cocción interna jugosa. Superficie dorada, fibras visibles, jugo cristalino sobre tabla rústica, estilo didáctico premium.",
+        "video_9x16": "Video vertical 9:16 tutorial rápido: cuchillo cortando carne lentamente, close-up del interior jugoso, brasas desenfocadas al fondo, transición humo a plato servido."
+      }
+    },
+    {
+      "post": {
+        "pilar": "Tradición Criolla",
+        "copy": "20 años de tradición chapaca en cada mesa. En El Chaquito de Felipe el asado no es solo comida, es el encuentro de la familia y la parrilla con alma paceña.",
+        "hashtags": [
+          "#Tradicion",
+          "#CocinaBoliviana",
+          "#ElChaquitodeFelipe"
+        ],
+        "cta": "Escribinos por WhatsApp",
+        "plato_recomendado": "Parrilla Personal",
+        "precio": "150 Bs.",
+        "generado_en": "2026-08-16T20:58:47.815087"
+      },
+      "prompts_visuales": {
+        "pilar": "Tradición Criolla",
+        "imagen_1x1": "Foto cuadrada 1:1 con ambiente familiar parrilla: mesa rústica con plato principal, copa de vino, pan casero, decoración con carbón y leña, luz cálida acogedora, 8K.",
+        "video_9x16": "Video vertical 9:16 narrativo: primeros planos de manos sirviendo parrilla, risas de fondo, humo suave, movimiento natural de la cámara, estética documental gastronómica."
+      }
+    }
+  ]
+}

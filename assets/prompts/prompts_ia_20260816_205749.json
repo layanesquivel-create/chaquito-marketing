@@ -1,9 +1,4 @@
 {
-  "metadata": {
-    "compilado_en": "2026-08-16T20:58:47.700653",
-    "imagenes_archivo": "prompts_imagenes_20260816_205847.json",
-    "videos_archivo": "prompts_videos_20260816_205847.json"
-  },
   "imagenes": [
     {
       "platillo": "menu_dia",
@@ -27,5 +22,11 @@
       "prompt": "Video vertical 9:16 cinemático de parrillada_premium en El Chaquito de Felipe. Cámara lenta 120fps: corte de carne con cuchillo, jugosidad extrema saliendo, humo ascendiendo en hilos translúcidos, brasas iluminando bordes, texturas close-up, música ambiente parrilla leve, transición humo a plato servido, 4K vertical, color grading cálido, focus pulling suave. Brasas encendidas en primer plano, partículas incandescentes ascendiendo. Corte transversal delgado en primer plano mostrando cocción interna jugosa. Humo volumétrico denso, contrapesado por luz cálida lateral.",
       "hash": "997fe6f1"
     }
-  ]
+  ],
+  "metadata": {
+    "restaurante": "El Chaquito de Felipe",
+    "campaña": "Especial Parrillero",
+    "marca_tiempo": "20260816_205749",
+    "total": 2
+  }
 }
