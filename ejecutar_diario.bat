@@ -1,4 +1,6 @@
 @echo off
+chcp 65001 > nul
+set PYTHONIOENCODING=utf-8
 cd /d D:\chaquito-marketing
 
 echo [INICIO] %date% %time% - Ejecutando pipeline diario de marketing Chaquito >> logs\ejecucion_diaria.log

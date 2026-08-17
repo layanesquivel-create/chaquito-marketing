@@ -1,6 +1,9 @@
 import subprocess
 import sys
 
+sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
+
 def ejecutar_script(nombre):
     print(f"\n[+] Ejecutando {nombre}...")
     resultado = subprocess.run([sys.executable, f"scripts/{nombre}"])
